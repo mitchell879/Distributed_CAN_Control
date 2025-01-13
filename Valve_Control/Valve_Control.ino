@@ -121,6 +121,7 @@ void loop() {
     // Valve is in closed state & commanded to open
     // Ensure valve close relay is off
     digitalWrite(CLOSE_VALVE_COMMAND_PIN, LOW);
+    delay(5);
     // Enable valve open relay
     digitalWrite(OPEN_VALVE_COMMAND_PIN, HIGH);
   }
@@ -128,6 +129,7 @@ void loop() {
     // Valve is in open state & commanded to close
     // Ensure valve open relay is off
     digitalWrite(OPEN_VALVE_COMMAND_PIN, LOW);
+    delay(5);
     // Enable valve close relay
     digitalWrite(CLOSE_VALVE_COMMAND_PIN, HIGH);
   }
